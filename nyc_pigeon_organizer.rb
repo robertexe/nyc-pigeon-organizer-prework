@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
     hash.each do | details, names |
       names.each do | name |
 
-        if pigeon_list[name] == nil 
+        if pigeon_list[name] == nil
           pigeon_list[name] = {att => [details.to_s]}
         elsif pigeon_list[name][att] == nil
           pigeon_list[name].merge!({att => [details.to_s]})
@@ -18,5 +18,3 @@ def nyc_pigeon_organizer(data)
   end
   pigeon_list
 end
-
- 
